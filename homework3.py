@@ -1,0 +1,87 @@
+
+import math
+
+#1
+name = input("Your name: ")
+print("Hello {0}".format(name))
+
+#2
+do = 3+8/(4-2)*4 #????????????? ?????? ????? ????????? ???????? ????????????
+do_str = str(do)
+new_do_str = do_str.replace('3','5')
+print(do_str)     
+print(new_do_str)
+
+do2 = 3+8/((4-2)*4)
+print(do2) #?????? ????? do ?  do2 ????? ????? ?????? ???? ??????, ? ????????? ???? ????? ?????? ?????? ?? ????????????
+
+#2.1
+r = 3
+s_ring = math.pi*r**2  
+p_ring = 2*math.pi*r  
+
+print(p_ring)  
+print(s_ring)
+
+#2.2
+r_equator = 6378
+d_equator = r_equator*2
+earth = math.pi*d_equator
+euro = 2
+euro_needed = earth/euro
+
+print(euro_needed)
+
+#3
+kill = "kill"
+koll = "koll"
+result = "{0}-{1} {0}-{1} {0}adi-{1} {0}-{1} {0}-{1} {0}+adi-{1} {0}-{1} {0}-{1} {0}{1} {0}-{1}".format(kill, koll)
+print(result)
+
+
+
+#4
+text = "Rong see sõitis tsuhh tsuhh tsuhh,\npiilupart oli rongijuht.\nRattad tegid rat tat taa,\nrat tat taa ja tat tat taa.\nAga seal rongi peal, kas sa tead, kes olid seal?"
+
+print(text)
+
+text.replace("rat tat taa, kill koll koll")
+text.replace("tat tat taa, kill koll kill")
+
+print(text)
+
+#5
+a = float(input("Write a"))
+b = float(input("Write b"))
+p = (a+b)*2
+s = a*b
+
+print(p) #????? ???????, ??? p, ??? ? s
+
+#6
+fuel = float(input("write how many fuel you fill"))
+distance = float(input("How many km you need to ride?"))
+print(fuel/distance)
+
+#7
+average = 29.9 
+distance_minute = average/60
+print(distance_minute)
+
+#8
+
+minutes = int(input("Write minutes"))
+time = minutes/60
+print(time)
+
+
+
+
+
+
+
+
+
+
+
+
